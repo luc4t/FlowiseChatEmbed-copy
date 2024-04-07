@@ -980,7 +980,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
             )}
           </div>
           {/* <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} /> */}
-          <span>&nbsp;&nbsp;</span>
+          <span class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"> </span>
         </div>
       </div>
       {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)} />}
