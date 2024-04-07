@@ -80,6 +80,7 @@ export type BotProps = {
 
 const defaultWelcomeMessage = 'Hi there! How can I help?';
 const defaultTitle = 'LBot';
+const defaultshowTitle = true;
 
 /*const sourceDocuments = [
     {
