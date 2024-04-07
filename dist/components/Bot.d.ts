@@ -43,8 +43,8 @@ export type BotProps = {
     badgeBackgroundColor?: string;
     bubbleBackgroundColor?: string;
     bubbleTextColor?: string;
-    showTitle?: boolean;
-    title?: string;
+    showTitle: true;
+    title: "LBot";
     titleAvatarSrc?: string;
     fontSize?: number;
     isFullPage?: boolean;

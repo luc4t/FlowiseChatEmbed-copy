@@ -70,8 +70,8 @@ export type BotProps = {
   badgeBackgroundColor?: string;
   bubbleBackgroundColor?: string;
   bubbleTextColor?: string;
-  showTitle?: boolean;
-  title?: string;
+  showTitle: true;
+  title: "LBot";
   titleAvatarSrc?: string;
   fontSize?: number;
   isFullPage?: boolean;
@@ -565,7 +565,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
       });
     }
     if (!acceptFile) {
-      alert(`Cannot upload file. Kindly check the allowed file types and maximum allowed size.`);
+      alert(`Only images are allowed for upload. Please upload a valid image file.`);
     }
     return acceptFile;
   };
@@ -789,7 +789,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               </>
             </Show>
             <Show when={props.title}>
-              <span class="px-3 whitespace-pre-wrap font-semibold max-w-full">LBot</span>
+              <span class="px-3 whitespace-pre-wrap font-semibold max-w-full">{props.title}</span>
             </Show>
             <div style={{ flex: 1 }} />
             <DeleteButton
