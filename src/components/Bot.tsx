@@ -70,8 +70,8 @@ export type BotProps = {
   badgeBackgroundColor?: string;
   bubbleBackgroundColor?: string;
   bubbleTextColor?: string;
-  showTitle: true;
-  title: 'LBot';
+  showTitle?: boolean;
+  title?: string;
   titleAvatarSrc?: string;
   fontSize?: number;
   isFullPage?: boolean;
@@ -79,6 +79,7 @@ export type BotProps = {
 };
 
 const defaultWelcomeMessage = 'Hi there! How can I help?';
+const defaultTitle = 'LBot';
 
 /*const sourceDocuments = [
     {
