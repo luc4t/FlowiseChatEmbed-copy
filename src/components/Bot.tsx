@@ -30,7 +30,6 @@ export type UploadsConfig = {
   imgUploadSizeAndTypes: ImageUploadConstraits[];
   isImageUploadAllowed: boolean;
   isSpeechToTextEnabled: boolean;
-  isFileAllowedForUpload: boolean;
 };
 
 type FilePreviewData = string | ArrayBuffer;
@@ -555,7 +554,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
   };
 
   const isFileAllowedForUpload = (file: File) => {
-    let acceptFile = true;
+    let acceptFile = false;
     if (uploadsConfig() && uploadsConfig()?.isImageUploadAllowed && uploadsConfig()?.imgUploadSizeAndTypes) {
       const fileType = file.type;
       const sizeInMB = file.size / 1024 / 1024;
@@ -790,7 +789,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               </>
             </Show>
             <Show when={props.title}>
-              <span class="px-3 whitespace-pre-wrap font-semibold max-w-full">{props.title}</span>
+              <span class="px-3 whitespace-pre-wrap font-semibold max-w-full">LBot</span>
             </Show>
             <div style={{ flex: 1 }} />
             <DeleteButton

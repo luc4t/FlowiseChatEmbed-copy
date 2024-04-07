@@ -10,7 +10,6 @@ export type UploadsConfig = {
     imgUploadSizeAndTypes: ImageUploadConstraits[];
     isImageUploadAllowed: boolean;
     isSpeechToTextEnabled: boolean;
-    isFileAllowedForUpload: boolean;
 };
 type FilePreviewData = string | ArrayBuffer;
 type FilePreview = {
