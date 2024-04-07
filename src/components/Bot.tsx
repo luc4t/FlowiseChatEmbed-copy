@@ -554,7 +554,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
   };
 
   const isFileAllowedForUpload = (file: File) => {
-    let acceptFile = false;
+    let acceptFile = true;
     if (uploadsConfig() && uploadsConfig()?.isImageUploadAllowed && uploadsConfig()?.imgUploadSizeAndTypes) {
       const fileType = file.type;
       const sizeInMB = file.size / 1024 / 1024;
