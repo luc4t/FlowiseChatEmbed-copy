@@ -979,7 +979,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               />
             )}
           </div>
-          <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} />
+          {/* <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} /> */}
         </div>
       </div>
       {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)} />}
@@ -987,9 +987,9 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
   );
 };
 
-// type BottomSpacerProps = {
-//   ref: HTMLDivElement | undefined;
-// };
-// const BottomSpacer = (props: BottomSpacerProps) => {
-//   return <div ref={props.ref} class="w-full h-32" />;
-// };
+type BottomSpacerProps = {
+  ref: HTMLDivElement | undefined;
+};
+const BottomSpacer = (props: BottomSpacerProps) => {
+  return <div ref={props.ref} class="w-full h-32" />;
+};
