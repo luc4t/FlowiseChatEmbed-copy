@@ -76,7 +76,7 @@ export const TextInput = (props: Props) => {
       {props.uploadsConfig?.isImageUploadAllowed ? (
         <>
           <ImageUploadButton buttonColor={props.sendButtonColor} type="button" class="m-0" on:click={handleImageUploadClick}>
-            <span style={{ 'font-family': 'Open Sans' }}>Image Upload</span>
+            <span style={{ 'font-family': 'Poppins, sans-serif' }}>Image Upload</span>
           </ImageUploadButton>
           <input style={{ display: 'none' }} multiple ref={fileUploadRef as HTMLInputElement} type="file" onChange={handleFileChange} />
         </>
@@ -91,7 +91,7 @@ export const TextInput = (props: Props) => {
       />
       {props.uploadsConfig?.isSpeechToTextEnabled ? (
         <RecordAudioButton buttonColor={props.sendButtonColor} type="button" class="m-0 start-recording-button" on:click={props.onMicrophoneClicked}>
-          <span style={{ 'font-family': 'Open Sans' }}>Record Audio</span>
+          <span style={{ 'font-family': 'Poppins, sans-serif' }}>Record Audio</span>
         </RecordAudioButton>
       ) : null}
       <SendButton
@@ -101,7 +101,7 @@ export const TextInput = (props: Props) => {
         class="m-0"
         on:click={submit}
       >
-        <span style={{ 'font-family': 'Open Sans' }}>Send</span>
+        <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
       </SendButton>
     </div>
   );

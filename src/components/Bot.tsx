@@ -789,9 +789,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               </>
             </Show>
             <Show when={props.title}>
-              <span style={{ 'font-family': 'Open Sans' }} class="px-3 whitespace-pre-wrap max-w-full">
-                {props.title}
-              </span>
+              <span class="px-3 whitespace-pre-wrap max-w-full">{props.title}</span>
             </Show>
             <div style={{ flex: 1 }} />
             <DeleteButton
@@ -801,7 +799,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               class="my-2 ml-2"
               on:click={clearChat}
             >
-              <span style={{ 'font-family': 'Open Sans' }}>Clear</span>
+              <span style={{ 'font-family': 'Poppins, sans-serif' }}>Clear</span>
             </DeleteButton>
           </div>
         ) : null}
@@ -872,7 +870,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               }}
             </For>
           </div>
-          <Show when={messages().length < 4}>
+          <Show when={messages().length < 8}>
             <Show when={starterPrompts().length > 0}>
               <div class="w-full flex flex-row flex-wrap px-5 py-[10px] gap-2">
                 <For each={[...starterPrompts()]}>{(key) => <StarterPromptBubble prompt={key} onPromptClick={() => promptClick(key)} />}</For>
@@ -949,7 +947,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                     </div>
                     <div class="flex items-center">
                       <CancelButton buttonColor={props.textInput?.sendButtonColor} type="button" class="m-0" on:click={onRecordingCancelled}>
-                        <span style={{ 'font-family': 'Open Sans' }}>Send</span>
+                        <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
                       </CancelButton>
                       <SendButton
                         sendButtonColor={props.textInput?.sendButtonColor}
@@ -958,7 +956,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                         class="m-0"
                         on:click={onRecordingStopped}
                       >
-                        <span style={{ 'font-family': 'Open Sans' }}>Send</span>
+                        <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
                       </SendButton>
                     </div>
                   </div>
