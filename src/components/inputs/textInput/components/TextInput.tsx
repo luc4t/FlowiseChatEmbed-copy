@@ -22,7 +22,7 @@ type Props = {
 };
 
 const defaultBackgroundColor = '#ffffff';
-const defaultTextColor = '#303235';
+const defaultTextColor = '#124265';
 
 export const TextInput = (props: Props) => {
   const [inputValue, setInputValue] = createSignal(props.defaultValue ?? '');

@@ -958,6 +958,15 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                       >
                         <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
                       </SendButton>
+                      <DeleteButton
+                        sendButtonColor={props.bubbleTextColor}
+                        type="button"
+                        isDisabled={messages().length === 1}
+                        class="my-2 ml-2"
+                        on:click={clearChat}
+                      >
+                        <span style={{ 'font-family': 'Poppins, sans-serif' }}>Clear</span>
+                      </DeleteButton>
                     </div>
                   </div>
                 )}
