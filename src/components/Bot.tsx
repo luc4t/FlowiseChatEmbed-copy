@@ -789,7 +789,9 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               </>
             </Show>
             <Show when={props.title}>
-              <span style={{ 'font-family': 'Open Sans' }} class="px-3 whitespace-pre-wrap max-w-full">{props.title}</span>
+              <span style={{ 'font-family': 'Open Sans' }} class="px-3 whitespace-pre-wrap max-w-full">
+                {props.title}
+              </span>
             </Show>
             <div style={{ flex: 1 }} />
             <DeleteButton
