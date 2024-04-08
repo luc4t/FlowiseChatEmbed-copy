@@ -772,7 +772,6 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
           </div>
         )}
 
-     
         <div class="flex flex-col w-full h-full justify-start z-0">
           <div
             ref={chatContainer}
