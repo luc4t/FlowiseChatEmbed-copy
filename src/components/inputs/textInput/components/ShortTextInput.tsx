@@ -8,16 +8,26 @@ type ShortTextInputProps = {
   disabled?: boolean;
 } & Omit<JSX.InputHTMLAttributes<HTMLInputElement>, 'onInput'>;
 
+const getFontSize = () => {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 700) {
+    return '13px';
+  } else {
+    return '15px';
+  }
+};
+
 export const ShortTextInput = (props: ShortTextInputProps) => {
   const [local, others] = splitProps(props, ['ref', 'onInput']);
+  const fontSize = getFontSize();
 
   return (
     <input
       ref={props.ref}
-      class="focus:outline-none bg-transparent px-2 py-2 flex-1 w-full text-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100"
+      class="focus:outline-none bg-transparent px-2 py-3 flex-1 w-full text-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100"
       type="text"
       disabled={props.disabled}
-      style={{ 'font-size': props.fontSize ? `${props.fontSize}px` : '14px' }}
+      style={{ 'font-size': props.fontSize ? `${props.fontSize}px` : fontSize }}
       onInput={(e) => local.onInput(e.currentTarget.value)}
       {...others}
     />
