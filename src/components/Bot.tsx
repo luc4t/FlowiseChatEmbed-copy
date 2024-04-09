@@ -884,11 +884,11 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                   <>
                     {item.mime.startsWith('image/') ? (
                       <button
-                        class="group w-12 h-12 flex items-center justify-center relative rounded-[10px] overflow-hidden transition-colors duration-200"
+                        class="group w-12 h-12 flex items-center justify-center relative rounded-xl overflow-hidden transition-colors duration-200"
                         onClick={() => handleDeletePreview(item)}
                       >
                         <img class="w-full h-full bg-cover" src={item.data as string} />
-                        <span class="absolute hidden group-hover:flex items-center justify-center z-10 w-full h-full top-0 left-0 bg-black/10 rounded-[10px] transition-colors duration-200">
+                        <span class="absolute hidden group-hover:flex items-center justify-center z-10 w-full h-full top-0 left-0 bg-black/10 rounded-xl transition-colors duration-200">
                           <TrashIcon />
                         </span>
                       </button>

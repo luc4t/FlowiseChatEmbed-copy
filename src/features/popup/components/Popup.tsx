@@ -85,7 +85,7 @@ export const Popup = (props: PopupProps) => {
         <div class="fixed inset-0 z-10 overflow-y-auto">
           <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
             <div
-              class="relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+              class="relative transform overflow-hidden rounded-xl text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
               style={{
                 'background-color': 'transparent',
                 'margin-left': '20px',
