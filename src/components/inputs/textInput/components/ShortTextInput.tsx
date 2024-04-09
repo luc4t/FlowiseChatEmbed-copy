@@ -13,7 +13,7 @@ export const ShortTextInput = (props: ShortTextInputProps) => {
   const [local, others] = splitProps(props, ['ref', 'onInput']);
 
   const isMobile = () => {
-    return window.innerWidth <= 768;
+    return window.innerWidth <= 700;
   };
 
   const getFontSize = () => {
@@ -29,7 +29,7 @@ export const ShortTextInput = (props: ShortTextInputProps) => {
   return (
     <input
       ref={props.ref}
-      class="focus:outline-none bg-transparent px-4 py-4 flex-1 w-full text-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100"
+      class="focus:outline-none bg-transparent px-2 py-3 flex-1 w-full text-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100"
       type="text"
       disabled={props.disabled}
       style={{ 'font-size': getFontSize() }}

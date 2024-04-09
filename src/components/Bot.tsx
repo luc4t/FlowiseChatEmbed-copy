@@ -930,7 +930,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                   </div>
                 ) : (
                   <div
-                    class="h-[58px] sm:h-[20px] flex items-center justify-between chatbot-input border border-[#eeeeee]"
+                    class="h-[58px] flex items-center justify-between chatbot-input border border-[#eeeeee]"
                     data-testid="input"
                     style={{
                       margin: 'auto',
