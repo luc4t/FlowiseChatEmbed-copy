@@ -15,7 +15,7 @@ export const StarterPromptBubble = (props: Props) => (
         data-testid="host-bubble"
         style={{
           width: 'max-content',
-          'font-size': '0.93rem',
+          'font-size': '0.8rem',
           'border-radius': '12px',
           cursor: 'pointer',
         }}
