@@ -778,8 +778,8 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
             style={{
               background: props.bubbleBackgroundColor,
               color: props.bubbleTextColor,
-              'border-top-left-radius': props.isFullPage ? '0px' : '6px',
-              'border-top-right-radius': props.isFullPage ? '0px' : '6px',
+              'border-top-left-radius': props.isFullPage ? '0px' : '12px',
+              'border-top-right-radius': props.isFullPage ? '0px' : '12px',
             }}
           >
             <Show when={props.titleAvatarSrc}>
@@ -920,7 +920,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                     <div class="w-full flex items-center justify-between gap-3">
                       <span class="text-base">To record audio, use modern browsers like Chrome or Firefox that support audio recording.</span>
                       <button
-                        class="py-2 px-4 justify-center flex items-center bg-red-500 text-white rounded-md"
+                        class="py-2 px-4 justify-center flex items-center bg-red-500 text-white rounded-xl"
                         type="button"
                         onClick={() => onRecordingCancelled()}
                       >
