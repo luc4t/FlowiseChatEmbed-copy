@@ -376,7 +376,7 @@ textarea {
 }
 
 .markdownanswer {
-  line-height: 1.1;
+  line-height: 1.75;
 }
 
 .markdownanswer a:hover {
@@ -422,7 +422,7 @@ textarea {
 
 .cloud {
   width: 400px;
-  height: 100px;
+  height: calc(100% - 50px);
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
